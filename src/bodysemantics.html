@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href= "../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Shopper</title>
+    <style>
+        
+        header 
+             .title{
+            background-color: black;
+            font-size: 50Px;
+            font-weight:bold;
+            color: white;
+            text-align: center;
+            }
+            nav div{
+                display: flex;
+                justify-content: space-between;
+            }
+            .lables{
+               font-size: 30px;
+                color: rgb(118, 7, 7);
+                font-family: italic;
+                padding-left: 100px;
+                }
+         .shortcut-icons{
+            font-size: 30px;
+         }
+         main 
+        .c1 {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin: 5px;
+            padding:5px;
+         }
+         .c2 {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin: 5px;
+            padding:5px;
+         }
+         footer {
+            background-color: black;
+            color:white;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            font-family: Arial;
+        }
+        .footer-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        footer span {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .button{
+            background-color: gold;
+            color:black;
+            padding: 10px;
+            text-align: center;
+            font-family: Arial;
+            font-size: 20px;
+        }
+        
+       
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="title">ShoPPEr.IN</div> 
+        <nav>
+            <div>
+            <div class="lables">
+                <span>Home</span> &nbsp;&nbsp;
+                <span>Fashionable</span> &nbsp;&nbsp;
+                <span>Branded</span> &nbsp;&nbsp;
+                <span>Contact</span> &nbsp;&nbsp;
+                <span>Aboutus</span> &nbsp;&nbsp;
+            </div>
+            <span class="shortcut-icons">
+                <span class="bi bi-person"></span> &nbsp;
+                <span class="bi bi-heart"></span> &nbsp;
+                <span class="bi bi-cart"></span> &nbsp;
+            </span>
+            </div>
+        </nav>
+        </header>
+        <section>
+            <div class="carousel slide carousel-dark" id="banners" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../public/2.png" height="250" class="w-100 d-block">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../public/1.png" height="250" class="w-100 d-block">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../public/3.png" height="250" class="w-100 d-block">
+                    </div>
+                </div>
+        
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banners">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banners">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+        
+                <div class="carousel-indicators">
+                    <button class="active" data-bs-slide-to="0" data-bs-target="#banners"></button>
+                    <button data-bs-slide-to="1" data-bs-target="#banners"></button>
+                    <button data-bs-slide-to="2" data-bs-target="#banners"></button>
+                </div>
+        
+        
+            </div>
+            <main>
+                <div class="c1">
+                   <img src="../public/c1.png" height="300px" width="275px">
+                   <img src="../public/c2.png" height="300px" width="275px">
+                   <img src="../public/c3.png" height="300px" width="275px">
+                   <img src="../public/c4.png" height="300px" width="275px">
+                </div>
+                <div class="c2">
+                   <img src="../public/c5.png" height="300px" width="275px">
+                   <img src="../public/c6.png" height="300px" width="275px">
+                   <img src="../public/c7.png" height="300px" width="275px">
+                   <img src="../public/c8.png" height="300px" width="275px">
+                </div>
+               <div><img src="../public/c9.png" height="300px" width="100%"></div>
+               <div><img src="../public/c10.png" height="300px" width="100%"></div>
+               
+            </main>
+        </section> 
+        <footer>
+                <div>
+                    <div class="footer-title">Get to Know Us</div>
+                    <span>About Us</span>
+                    <span>Careers</span>
+                    <span>Press Releases</span>
+                    <span>ShoPPEr.IN Science</span>
+                </div>
+                <div>
+                    <div class="footer-title"> &nbsp Connect with Us</div>
+                    <span class="bi bi-facebook">&nbsp Facebook</span>
+                    <span class="bi bi-twitter"> &nbsp Twitter</span>
+                    <span class="bi bi-instagram"> &nbsp Instagram</span>
+                </div>
+                <div>
+                    <div class="footer-title">Make Money with Us</div>
+                    <span>Sell on ShoPPEr.IN</span>
+                    <span>Sell under ShoPPEr.IN Accelerator</span>
+                    <span>Protect and Build Your Brand</span>
+                    <span>ShoPPEr.IN Global Selling</span>
+                    <span>Become an Affiliate</span>
+                    <span>Fulfilment by ShoPPEr.IN</span>
+                    <span>Advertise Your Products</span>
+                    <span>ShoPPEr.IN Pay on Merchants</span>
+                </div>
+                <div>
+                    <div class="footer-title">Let Us Help You</div>
+                    <span>COVID-19 and Amazon</span>
+                    <span>Your Account</span>
+                    <span>Returns Centre</span>
+                    <span>100% Purchase Protection</span>
+                    <span>ShoPPEr.IN App Download</span>
+                    <span>Help</span>
+                </div>
+        </footer>
+        <div class="button">
+            <span class="bi bi-lightning-fill"></span>
+            <span>HaPpY TO ConNEct WiTh Us</span>
+            <span class="bi bi-lightning-fill"></span>
+        </div>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

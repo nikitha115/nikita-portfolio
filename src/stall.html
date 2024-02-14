@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        header{
+            background-image: url(../public/bg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+            }
+       .text{
+        font-style: italic;
+        font-size: 80px;
+        color: white;
+        margin-top: 30px;
+        background-color: rgba(0,0,0,0.5);
+    }
+        .text2{
+            font-style:bold;
+            font-size: 40px;
+            margin-left: 150px;
+            } 
+        .text3{
+            font-style:gigi regular;
+            font-size: 40px;
+            margin-left: 200px;
+            }
+            .items{
+                background-color: black;
+                color: white;
+                font-size: 35px;
+                font-style: lucida italic;
+                text-align: center;
+                margin: 25px;
+            }
+           .snack{
+            background-color: black;
+            color: white;
+            font-size: 35px;
+            font-style:gigi regular;
+            text-align: center;
+            margin: 30px;
+           }
+           .table{
+            background-color: black;
+            color: white;
+            font-size: 35px;
+            font-style:gigi regular;
+            text-align: center;
+            margin: 30px;
+           }
+           .social{
+            background-color: black;
+            color: white;
+            font-size: 35px;
+            font-style:gigi regular;
+            text-align: center;
+            margin: 30px;
+
+           }
+           .icons{font-size: 35px;margin-left: 600px;}
+           footer {
+            background-color: black;
+            color:white;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr ;
+            font-family: Arial;
+        }
+        .footer-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        footer span {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .light{
+            font-size: 30px;
+            font-style: italic;
+        }
+        </style>
+        <script type="text/javascript">
+            function OrderNOW(){
+                
+                var coffename="";
+                var coffecost=0;
+
+                
+                var opthot=document.getElementById("opthot");
+                var optpure=document.getElementById("optpure");
+                var optblack=document.getElementById("optblack");
+                var optcold=document.getElementById("optcold");
+                   
+                if(opthot.checked){
+                  coffename +=opthot.value + "<br>"
+                  coffecost +=154;
+                  
+                  
+                  }
+                if(optpure.checked){
+                  coffename +=optpure.value + "<br>"
+                  coffecost +=245;
+                  
+                  
+                  }
+               if(optblack.checked){
+                  coffename +=optblack.value + "<br>"
+                  coffecost +=350;
+                  
+                  }
+              if(optcold.checked){
+                  coffename +=optcold.value + "<br>"
+                  coffecost +=100;
+                 
+                  }
+
+                var snacksname="";
+                var snackscost=0;
+
+                
+                var optchips=document.getElementById("optchips");
+                var optpizza=document.getElementById("optpizza");
+                var optburger=document.getElementById("optburger");
+                var optbread=document.getElementById("optbread");
+                var optchat=document.getElementById("optchat");
+                   
+                   
+                if(optchips.checked){
+                  snacksname +=optchips.value + "<br>"
+                  snackscost +=215;
+                  
+                 
+                  
+                  }
+                if(optpizza.checked){
+                   snacksname +=optpizza.value + "<br>"
+                   snackscost  +=514;
+                  
+                  
+                  
+                  }
+               if(optburger.checked){
+                  snacksname +=optburger.value + "<br>"
+                  snackscost +=175;
+                 
+                  
+                  }
+              if(optbread.checked){
+                  snacksname +=optbread.value + "<br>"
+                  snackscost +=250;
+                  
+              }
+                  
+              if(optchat.checked){
+                snacksname +=optchat.value + "<br>"
+                  snackscost +=155;
+                  
+                  
+              }
+
+              var tablename="";
+                var tablecost=0;
+
+                
+                var optfamily=document.getElementById("optfamily");
+                var optclub=document.getElementById("optclub");
+                var optcabin=document.getElementById("optcabin");
+                var optsigle=document.getElementById("optsingle");
+                   
+                if(optfamily.checked){
+                  tablename +=optfamily.value + "<br>"
+                  tablecost +=2150;
+                  
+                  
+                  }
+                if(optclub.checked){
+                  tablename +=optclub.value + "<br>"
+                  tablecost +=2750;
+                  
+                  
+                  }
+               if(optcabin.checked){
+                  tablename +=optcabin.value + "<br>"
+                  tablecost +=2500;
+                
+                  }
+
+                  if(optsingle.checked){
+                  tablename +=optsingle.value + "<br>"
+                  tablecost +=1515;
+                 
+                  
+                  }
+
+                  var total = coffecost + snackscost + tablecost; 
+
+              document.getElementById("iblcoffe").innerHTML = coffename ;
+              document.getElementById("iblsnacks").innerHTML  = snacksname;
+              document.getElementById("ibltable").innerHTML= tablename;
+              document.getElementById("ibltotal").innerHTML = `&#8377;${total}`
+        }
+            
+        </script>
+</head>
+<body>
+    <header>
+    <div class="text">
+        nIsH stALL
+        <div class="text2">To fEEls it sO DeLICiOUS</div>
+           <div class="text3">JUst ORDER Here</div>
+    </div>
+    </header>
+    <section id="stall">
+          <div class="items">
+              Ours Special's
+              </div>
+              <div class="row text-center" id="coffe">
+                <div class="col">
+                    <img src="../public/cup6.jpg" width="200px" height="250px">
+                    <div>
+                        <div class="h3">Hot coffe</div>
+                        <input type="checkbox" id="opthot" value="Hot coffe" class="form-check-input"><label class="form-check-label fw-bold">&#8377;154/--</label>
+                    
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img src="../public/cup4.jpg" width="200px" height="250px">
+                    <div>
+                        <div class="h3"> Pure coffeBee</div>
+                        <input type="checkbox"id="optpure" value="Pure coffeBee" class="form-check-input" ><label class="form-check-label fw-bold">&#8377;245/--</label>
+                    
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img src="../public/cup2.jpg" width="200px" height="250px">
+                    <div>
+                        <div class="h3">Black Coffe</div>
+                        <input type="checkbox" id="optblack" value="Black Coffe" class="form-check-input"><label class="form-check-label fw-bold">&#8377;350/--</label>
+                    
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img src="../public/cup3.jpg" width="200px" height="250px">
+                    <div>
+                        <div class="h3">Cold Coffe</div>
+                        <input type="checkbox" id="optcold" value="Cold Coffe" class="form-check-input"><label class="form-check-label fw-bold">&#8377;100/--</label>
+                    
+                    </div>
+                  </div>
+            </div>
+            <div class="snack">
+            Our Snacky Item's
+            </div>
+            <div class="row text-center" id="snacks">
+                <div class="col">
+                    <img src="../public/s1.jpeg" width="200px" height="250px">
+                    <div>
+                        <div class="h3">Crisspy Chips</div>
+                        <input type="checkbox" id="optchips" value="Crisspy Chips" class="form-check-input"><label class="form-check-label fw-bold">&#8377;215/--</label>
+                    </div>
+                </div>
+                    <div class="col">
+                        <img src="../public/s2.jpeg" width="200px" height="250px">
+                        <div>
+                            <div class="h3">Burger</div>
+                            <input type="checkbox" id="optburger" value="Burger" class="form-check-input"><label class="form-check-label fw-bold">&#8377;175/--</label>
+                        </div>
+                    </div>
+                        <div class="col">
+                            <img src="../public/s3.jpeg" width="200px" height="250px">
+                            <div>
+                                <div class="h3">Roasted Bread</div>
+                                <input type="checkbox" id="optbread" value="Roasted Bread" class="form-check-input"><label class="form-check-label fw-bold">&#8377;250/--</label>
+                            </div>
+                         </div>
+                            <div class="col">
+                                <img src="../public/s4.jpeg" width="200px" height="250px">
+                                <div>
+                                    <div class="h3">Dominos Pizza</div>
+                                    <input type="checkbox" id="optpizza" value="Dominos Pizza" class="form-check-input"><label class="form-check-label fw-bold">&#8377;514/--</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                 <img src="../public/s5.jpeg" width="200px" height="250px">
+                                    <div>
+                                        <div class="h3">Samosa Chat</div>
+                                        <input type="checkbox" id="optchat" value="Samosa Chat" class="form-check-input"><label class="form-check-label fw-bold">&#8377;155/--</label>
+                                    </div>
+                            </div>
+             </div>
+
+            <div class="table">
+            BooKing your Table
+            </div>
+            <div class="row text-center" id="booking">
+                <div class="col">
+                    <img src="../public/b1.jpeg" width="250px" height="250px">
+                    <div>
+                        <div class="h3">Family's Gathering</div>
+                        <input type="checkbox" id="optfamily" value="Family's Gathering" class="form-check-input"><label class="form-check-label fw-bold">&#8377;2150/--</label>
+                    </div>
+                </div>
+                    <div class="col">
+                        <img src="../public/b2.webp" width="250px" height="250px">
+                        <div>
+                            <div class="h3">Buddie's Club</div>
+                            <input type="checkbox" id="optclub" value="Buddie's Club" class="form-check-input"><label class="form-check-label fw-bold">&#8377;2750/--</label>
+                        </div>
+                    </div>
+                        <div class="col">
+                            <img src="../public/b3.jpeg" width="250px" height="250px">
+                            <div>
+                                <div class="h3">Couples Cabin</div>
+                                <input type="checkbox" id="optcabin" value="Couples Cabin" class="form-check-input"><label class="form-check-label fw-bold">&#8377;2500/--</label>
+                            </div>
+                         </div>
+                            <div class="col">
+                                <img src="../public/b4.jpeg" width="250px" height="250px">
+                                <div>
+                                    <div class="h3">Single KIng's</div>
+                                    <input type="checkbox" id="optsingle" value="Single KIng's" class="form-check-input"><label class="form-check-label fw-bold">&#8377;1515/--</label>
+                                </div>
+                            </div>
+                            
+             </div>
+
+            <div class="social">
+                Ours Social Media Partners
+            </div>
+            <div class="icons">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi- bi-skype"></span>
+                <span class="bi bi-youtube"></span>
+            </div>
+    </section>
+    <footer>
+
+        <div>
+            <div class="footer-title">Get to Know Us</div>
+            <span>About Us</span>
+            <span>Careers</span>
+        </div>
+        
+       <div class="footer-title"> 
+         <button onclick="OrderNOW()" class="bg-white text-dark mt-3" data-bs-target="#summary" data-bs-toggle="modal">ORder NoW</button>
+            <div class="modal fade" id="summary">
+                <div class="modal-dialog"> 
+                   <div class="modal-content">
+                       <div class="modal-header">
+                           <h3 class="text-dark text-center"> Your Bill Amount</h3>
+                           <button class="btn-close" data-bs-dismiss="modal"></button>
+                       </div>
+                       <div class="modal-body">
+                           <div class="row text-danger">
+                               <div class="col">
+                                    <dl>
+                                      <dt>Coffe</dt>
+                                      <dd class="text-black" id="iblcoffe"></dd>
+                                      <dt>Snacks</dt>
+                                      <dd class="text-black" id="iblsnacks"></dd>
+                                      <dt>Table</dt>
+                                      <dd class="text-black" id="ibltable"></dd>
+                                      <dt>Total</dt>
+                                      <dd  class="text-black" id="ibltotal"></dd>
+                                      
+                                   </dl>
+                                   
+                                  
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                </div>
+                </div>
+        
+        <div class="light">
+            HAppy to SEE U 
+              ViSiT aGaIN
+        </div>   
+    </footer>
+    
+    
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
