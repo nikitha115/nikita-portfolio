@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findMinMax(arr) {
+    let smallest = arr[0];
+    let largest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i];
+        } else if (arr[i] < smallest) {
+            smallest = arr[i];
+        }
+    }
+    return { smallest, largest };
+}
+const numbers = [2, 4, 9, 2, 0, 16, 24];
+const { smallest, largest } = findMinMax(numbers);
+
+console.log(`Smallest: ${smallest}`);
+console.log(`Largest: ${largest}`);
+
+    </script>
+</body>
+</html>
